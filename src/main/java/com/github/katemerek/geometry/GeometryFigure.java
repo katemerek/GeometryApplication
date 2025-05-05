@@ -2,6 +2,7 @@ package com.github.katemerek.geometry;
 
 
 import com.github.katemerek.geometrylib.Rectangle;
+import com.github.katemerek.geometrylib.Square;
 import com.github.katemerek.geometrylib.Triangle;
 
 public class GeometryFigure {
@@ -10,7 +11,10 @@ public class GeometryFigure {
         System.out.println("Площадь треугольника: " + triangle.getArea());
 
         Rectangle rectangle = new Rectangle(10,20);
-        System.out.println("Периметр квадрата: " + rectangle.getPerimeter());
+        System.out.println("Периметр прямоугольника: " + rectangle.getPerimeter());
         System.out.println("Длина диагонали: " + rectangle.getDiagonal());
+
+        Square square = new Square(6);
+        System.out.println("Площадь квадрата: " + square.getArea());
     }
 }
