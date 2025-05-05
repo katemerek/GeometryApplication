@@ -4,6 +4,8 @@ package com.github.katemerek.geometry;
 import com.github.katemerek.geometrylib.Rectangle;
 import com.github.katemerek.geometrylib.Square;
 import com.github.katemerek.geometrylib.Triangle;
+import com.github.katemerek.geometryutil.GeometryConverter;
+import com.github.katemerek.geometryutil.Rhombus;
 
 public class GeometryFigure {
     public static void main(String[] args) {
@@ -16,5 +18,11 @@ public class GeometryFigure {
 
         Square square = new Square(6);
         System.out.println("Площадь квадрата: " + square.getArea());
+
+        Rhombus rhombus = new Rhombus(13, 10, 24);
+        System.out.println("Периметр ромба: " + rhombus.getArea());
+
+        GeometryConverter converter = new GeometryConverter();
+        System.out.println("Перевод в метры: " + GeometryConverter.centimetersToMeters(rhombus.getArea()));
     }
 }
