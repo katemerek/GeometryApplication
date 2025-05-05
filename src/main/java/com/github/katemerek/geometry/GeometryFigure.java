@@ -22,7 +22,8 @@ public class GeometryFigure {
         Rhombus rhombus = new Rhombus(13, 10, 24);
         System.out.println("Периметр ромба: " + rhombus.getArea());
 
-        GeometryConverter converter = new GeometryConverter();
         System.out.println("Перевод в метры: " + GeometryConverter.centimetersToMeters(rhombus.getArea()));
+        System.out.println("Перевод в километры: " + GeometryConverter.centimetersToKilometers(5000));
+
     }
 }
