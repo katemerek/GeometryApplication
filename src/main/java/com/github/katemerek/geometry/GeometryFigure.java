@@ -6,6 +6,7 @@ import com.github.katemerek.geometrylib.Square;
 import com.github.katemerek.geometrylib.Triangle;
 import com.github.katemerek.geometryutil.GeometryConverter;
 import com.github.katemerek.geometryutil.Rhombus;
+import com.github.katemerek.shapes.Cube;
 
 public class GeometryFigure {
     public static void main(String[] args) {
@@ -25,5 +26,7 @@ public class GeometryFigure {
         System.out.println("Перевод в метры: " + GeometryConverter.centimetersToMeters(rhombus.getArea()));
         System.out.println("Перевод в километры: " + GeometryConverter.centimetersToKilometers(5000));
 
+        Cube cube = new Cube(15);
+        System.out.println("Площадь поверхности куба: " + cube.getSurfaceArea());
     }
 }
